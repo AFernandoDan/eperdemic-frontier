@@ -1,10 +1,10 @@
 {
   "private": false,
-  "name": "eperdemic",
+  "name": "eperdemic-frontier",
   "version": "1.0.0",
   "description": "Frontend del proyecto Eperdemic de la materia de Estrategias de Persistencia UNQ, fork de chrisrzhou/google-globe-trends",
   "license": "MIT",
-  "repository": "afernandodan/eperdemic",
+  "repository": "afernandodan/eperdemic-frontier",
   "author": "Afernandodan",
   "keywords": [
     "google",

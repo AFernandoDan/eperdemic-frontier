@@ -9,8 +9,8 @@ const ubicacionesToMarker = (ubicaciones) => {
     markers.push({
       id,
       city: nombre,
-      vectores,
       value: vectores.length,
+      vectores,
       coordinates: [coordenada.latitud, coordenada.longitud],
     })
   })

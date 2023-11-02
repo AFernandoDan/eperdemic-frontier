@@ -3,7 +3,7 @@ import React from 'react';
 const links = {
   CONFIG:
     'https://github.com/chrisrzhou/google-globe-trends/tree/master/src/config.js',
-  GITHUB_REPO: 'https://github.com/afernandodan',
+  GITHUB_REPO: 'https://github.com/afernandodan/eperdemic-frontier',
   GOOGLE_TRENDS_API: 'https://www.npmjs.com/package/google-trends-api',
   JAMSTACK: 'https://jamstack.org/',
   METOO: 'https://metoorising.withgoogle.com/',

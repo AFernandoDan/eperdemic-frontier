@@ -10,7 +10,7 @@ export default function About({ onHide, show }) {
       <div className="about-content">
         <h2>About</h2>
         <p>
-          <Link link="GITHUB_REPO">Eperdemic</Link> es un proyecto para la materia de
+          <Link link="GITHUB_REPO">Eperdemic Frontier</Link> es un proyecto para la materia de
           Estrategias de Persistencia. Este es un fork de{' '}
           <Link link="GOOGLE_GLOBE_TRENDS_GITHUB">google-globe-trends</Link>.
         </p>

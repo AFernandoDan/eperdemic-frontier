@@ -3,6 +3,7 @@ import React from 'react';
 import { useStateValue } from '../state';
 import Button from './button';
 import Fade from './fade';
+import UbicacionVectores from "./UbicacionVectores";
 
 function getSearchUrl(city, country, keyword) {
   const formattedQuery = `${encodeURIComponent(city)}, ${encodeURIComponent(
@@ -27,7 +28,7 @@ export default function Details() {
 
   let content;
   if (focusedMarker) {
-    const { city, countryCode, countryName, value } = focusedMarker;
+    const { city, countryCode, countryName, value, vectores } = focusedMarker;
     const url = getSearchUrl(city, countryName, config.keyword);
     const topics = relatedTopics[countryCode] || [];
 
@@ -45,21 +46,10 @@ export default function Details() {
         </div>
         <div className="content">
           <h2>
-            {city}, {countryName} ({value})
+            {city} ({value})
           </h2>
           <div className="details-content">
-            RELATED TOPICS
-            {topics.map(({ topic, link }) => {
-              return (
-                <a
-                  key={topic}
-                  href={`https://trends.google.com${link}`}
-                  rel="noopener noreferrer"
-                  target="_blank">
-                  {topic}
-                </a>
-              );
-            })}
+            <UbicacionVectores vectores={vectores}/>
           </div>
           <Button
             label="View search results"
