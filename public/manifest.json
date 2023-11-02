@@ -1,6 +1,6 @@
 {
-  "short_name": "google-globe-trends",
-  "name": "google-globe-trends",
+  "short_name": "eperdemic",
+  "name": "eperdemic-react",
   "icons": [
     {
       "src": "favicon.ico",

@@ -1,17 +1,34 @@
 import React, { createContext, useContext, useReducer } from 'react';
 
 import config from './config';
-import data from './data/data.json';
 
-const { lastUpdated, relatedTopics, trends } = data;
+const markers = []
+
+const ubicacionesToMarker = (ubicaciones) => {
+  ubicaciones.forEach(({id, coordenada, nombre, vectores }) => {
+    markers.push({
+      id,
+      city: nombre,
+      vectores,
+      value: vectores.length,
+      coordinates: [coordenada.latitud, coordenada.longitud],
+    })
+  })
+}
+
+fetch('http://localhost:8080/ubicacion/all')
+  .then(response => response.json())
+  .then(ubicaciones => {
+    ubicacionesToMarker(ubicaciones);
+  });
 
 export const initialState = {
   config,
   focusedMarker: null,
   hasLoaded: false,
-  lastUpdated,
-  markers: trends,
-  relatedTopics,
+  lastUpdated: {},
+  markers: markers,
+  relatedTopics: {},
   start: false,
 };
 

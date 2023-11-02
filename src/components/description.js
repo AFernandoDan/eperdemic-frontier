@@ -8,8 +8,7 @@ export default function Description() {
 
   return (
     <>
-      Visualizing <b>{`"${config.keyword}"`}</b> Google Trends with{' '}
-      <Link link="REACT_GLOBE_GITHUB">react-globe</Link>
+      Visualizando ubicaciones, fork de <Link link="GOOGLE_GLOBE_TRENDS_GITHUB">google-globe-trends</Link>
     </>
   );
 }

@@ -3,13 +3,13 @@ import React from 'react';
 const links = {
   CONFIG:
     'https://github.com/chrisrzhou/google-globe-trends/tree/master/src/config.js',
-  GITHUB_REPO: 'https://github.com/chrisrzhou/google-globe-trends',
+  GITHUB_REPO: 'https://github.com/afernandodan',
   GOOGLE_TRENDS_API: 'https://www.npmjs.com/package/google-trends-api',
   JAMSTACK: 'https://jamstack.org/',
   METOO: 'https://metoorising.withgoogle.com/',
   NETLIFY_DEPLOY:
     'https://app.netlify.com/start/deploy?repository=https://github.com/chrisrzhou/google-globe-trends',
-  REACT_GLOBE_GITHUB: 'https://github.com/chrisrzhou/react-globe',
+  GOOGLE_GLOBE_TRENDS_GITHUB: 'https://github.com/chrisrzhou/google-globe-trends',
 };
 
 export default function Link({ children, className, link, onClick }) {

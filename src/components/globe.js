@@ -125,7 +125,7 @@ export default function Globe() {
     ...config.options,
     enableGlobeGlow: !isFocusing,
     enableCameraRotate: start && !isFocusing,
-    markerTooltipRenderer: (marker) => `${marker.city} (${marker.value})`,
+    markerTooltipRenderer: (marker) => `${marker.city} (${marker.vectores.length})`,
     markerRenderer,
   };
 

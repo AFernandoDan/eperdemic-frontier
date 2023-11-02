@@ -22,7 +22,7 @@ export default function Overlay() {
       <Fade className="overlay" show={showOverlay}>
         <div className="header">
           <div>
-            <h2>Google Globe Trends</h2>
+            <h2>Eperdemic</h2>
             <div className="overlay-subtitle">
               <Description />
             </div>
@@ -35,8 +35,8 @@ export default function Overlay() {
           </div>
         </div>
         <div className="content">
-          TOP 5 SEARCHING CITIES
-          {markers.slice(0, 5).map((marker) => (
+          TOP 5 UBICACIONES MAS POBLADAS
+          {markers && markers.slice(0, 5).map((marker) => (
             <Link key={marker.city}>
               <h2 onClick={() => dispatch({ type: 'FOCUS', payload: marker })}>
                 {marker.city} ({marker.value})

@@ -1,13 +1,11 @@
 {
-  "private": true,
-  "name": "google-globe-trends",
+  "private": false,
+  "name": "eperdemic",
   "version": "1.0.0",
-  "description": "Create beautiful and interactive Google Trends globe visualizations with ease.",
+  "description": "Frontend del proyecto Eperdemic de la materia de Estrategias de Persistencia UNQ, fork de chrisrzhou/google-globe-trends",
   "license": "MIT",
-  "homepage": "https://google-globe-trends.netlify.com/",
-  "repository": "chrisrzhou/google-globe-trends",
-  "bugs": "https://github.com/chrisrzhou/google-globe-trends/issues",
-  "author": "Chris Zhou <chrisrzhou@pm.me> (https://chrisrzhou.io)",
+  "repository": "afernandodan/eperdemic",
+  "author": "Afernandodan",
   "keywords": [
     "google",
     "globe",
