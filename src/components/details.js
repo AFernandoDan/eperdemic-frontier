@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import { useStateValue } from '../state';
 import Button from './button';
@@ -27,10 +27,9 @@ export default function Details() {
   const randomMarker = getRandomMarker({ focusedMarker, markers });
 
   let content;
+
   if (focusedMarker) {
     const { city, countryCode, countryName, value, vectores } = focusedMarker;
-    const url = getSearchUrl(city, countryName, config.keyword);
-    const topics = relatedTopics[countryCode] || [];
 
     content = (
       <>
@@ -53,7 +52,6 @@ export default function Details() {
           </div>
           <Button
             label="View search results"
-            onClick={() => window.open(url, '_blank')}
           />
         </div>
       </>

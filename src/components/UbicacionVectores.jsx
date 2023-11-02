@@ -4,6 +4,7 @@ const UbicacionVectores = ({vectores}) => {
   const [vectoresConEnfermedades, setVectoresConEnfermedades] = useState([]);
 
   useEffect(() => {
+    if (vectores && vectores.length === 0) setVectoresConEnfermedades([]);
     vectores.map(vector => {
       fetch(`http://localhost:8080/vector/enfermedades/${vector.id}`)
         .then(response => response.json())
@@ -17,9 +18,11 @@ const UbicacionVectores = ({vectores}) => {
   return <>
     {vectoresConEnfermedades && vectoresConEnfermedades.map(vector => {
       return <div key={vector.id}>
-        <h3>{vector.tipo}</h3>
-        <ul>
-          {vector.enfermedades && vector.enfermedades.map(({id, nombre, patogeno}) => {
+        <h3 style={{fontSize: "1.25rem"}}>{vector.tipo}</h3>
+        <h3 style={{marginTop: "0"}}><i>enfermedades</i>:</h3>
+        <ul style={{listStyleType: "none", marginTop: "0.25rem"}}>
+          {vector.enfermedades && vector.enfermedades.map((enfermedad, idx, arr) => {
+            const {id, nombre, patogeno} = enfermedad;
             return <li key={id}>{nombre} ({patogeno.tipo})</li>
           })}
         </ul>
