@@ -1,32 +1,16 @@
 import React from 'react';
-import { Chart } from "react-google-charts";
+import InfectadosPorUbicacionChart from '../components/InfectadosPorUbicacionChart';
+import InfectadosPorEspecieChart from '../components/InfectadosPorEspecieChart';
+import InfectadosPorEspecieYUbicacionChart from '../components/InfectadosPorEspecieYUbicacionChart';
 
-export const data = [
-  ["Year", "Sales", "Expenses"],
-  ["2013", 1000, 400],
-  ["2014", 1170, 460],
-  ["2015", 660, 1120],
-  ["2016", 1030, 540],
-];
+const Graficos = () => {
 
-export const options = {
-  title: "Infectados por ubicacion",
-  hAxis: { title: "Year", titleTextStyle: { color: "#333" } },
-  vAxis: { minValue: 0 },
-  chartArea: { width: "50%", height: "70%" },
-};
-
-const Graficos = (props) => (
-  <div>
+  return (<div className='graficos-container'>
     <h1>Graficos</h1>
-    <Chart
-      chartType="AreaChart"
-      width="100%"
-      height="400px"
-      data={data}
-      options={options}
-    />
-  </div>
-);
+    <InfectadosPorEspecieYUbicacionChart />
+    <InfectadosPorUbicacionChart/>
+    <InfectadosPorEspecieChart />
+  </div>)
+}
 
 export default Graficos;

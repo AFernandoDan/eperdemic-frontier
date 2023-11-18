@@ -203,3 +203,12 @@ body {
     }
   }
 }
+
+// graficos container
+.graficos-container {
+  pointer-events: all;
+  overflow-y: auto;
+  min-height: max-content;
+  max-height: 100vh;
+  overflow-x: hidden;
+}
