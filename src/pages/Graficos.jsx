@@ -7,9 +7,9 @@ const Graficos = () => {
 
   return (<div className='graficos-container'>
     <h1>Graficos</h1>
-    <InfectadosPorEspecieYUbicacionChart />
-    <InfectadosPorUbicacionChart/>
-    <InfectadosPorEspecieChart />
+      <InfectadosPorEspecieYUbicacionChart />
+      <InfectadosPorUbicacionChart/>
+      <InfectadosPorEspecieChart />
   </div>)
 }
 

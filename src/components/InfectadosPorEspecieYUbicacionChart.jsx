@@ -70,7 +70,7 @@ const InfectadosPorEspecieYUbicacionChart = () => {
         {infectadosPorEspecieYUbicacion.length > 0 && !loading && <Chart
             chartType="AreaChart"
             width="100%"
-            height="400px"
+            height="100vh"
             data={infectadosPorEspecieYUbicacion}
             options={options}
         />}

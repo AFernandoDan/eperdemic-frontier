@@ -9,7 +9,8 @@
 }
 
 ul {
-    list-style: none;
+    /* list style custom */
+    list-style: circle;
     margin: 0;
 }
 

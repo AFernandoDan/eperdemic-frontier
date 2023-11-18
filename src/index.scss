@@ -212,3 +212,21 @@ body {
   max-height: 100vh;
   overflow-x: hidden;
 }
+
+// graficos container
+.graficos-container text {
+  fill: #fcdcbf;
+}
+
+// tengo un svg dentro de graficos-container cambiale el fondo a negro
+.graficos-container svg rect {
+  fill: black
+}
+
+.graficos-container .google-visualization-tooltip path {
+  fill: black;
+}
+
+.graficos-container h1 {
+  margin-left: 1rem;
+}
