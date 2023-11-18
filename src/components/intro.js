@@ -10,7 +10,7 @@ export default function Intro() {
 
   return (
     <Fade className="intro" show={!start}>
-      <h1>Epedemic Frontier</h1>
+      <h1>Eperdemic Frontier</h1>
       <p>
         <Description />
       </p>

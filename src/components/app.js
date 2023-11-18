@@ -1,17 +1,15 @@
 import React from 'react';
-
-import Details from './details';
-import Globe from './globe';
-import Intro from './intro';
-import Overlay from './overlay';
+import Ubicaciones from "../pages/Ubicaciones";
+import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import Graficos from "../pages/Graficos";
 
 export default function App() {
   return (
-    <>
-      <Globe />
-      <Intro />
-      <Overlay />
-      <Details />
-    </>
+    <Router>
+      <Routes>
+          <Route path="/" element={<Ubicaciones />} />
+          <Route path="/graficos" element={<Graficos />} />
+      </Routes>
+    </Router>
   );
 }

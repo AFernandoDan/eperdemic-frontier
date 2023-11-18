@@ -160,6 +160,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: $spacing * 2 0;
+    pointer-events: all;
   }
 }
 

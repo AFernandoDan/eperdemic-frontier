@@ -1,0 +1,19 @@
+.vectores-container {
+    height: 40vh;
+    overflow-y: scroll;
+    padding: 1rem;
+}
+
+.vector-type {
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
