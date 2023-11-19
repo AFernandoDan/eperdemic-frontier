@@ -4,7 +4,7 @@
  * react-globe: https://github.com/chrisrzhou/react-globe
  */
 export default {
-  keyword: 'covid + covid19 + coronavirus',
+  keyword: 'UNQ, EPERDEMIC, EPERS, ESTRATEGIAS DE PERSISTENCIA',
   globeBackgroundTexture:
     'https://raw.githubusercontent.com/chrisrzhou/react-globe/main/textures/background.png',
   globeCloudsTexture:

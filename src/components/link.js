@@ -10,6 +10,8 @@ const links = {
   NETLIFY_DEPLOY:
     'https://app.netlify.com/start/deploy?repository=https://github.com/chrisrzhou/google-globe-trends',
   GOOGLE_GLOBE_TRENDS_GITHUB: 'https://github.com/chrisrzhou/google-globe-trends',
+  GRAFICOS_PATH: 'http://localhost:3000/graficos',
+  HOME_PATH: 'http://localhost:3000/',
 };
 
 export default function Link({ children, className, link, onClick }) {
