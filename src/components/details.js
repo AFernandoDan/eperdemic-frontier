@@ -50,9 +50,7 @@ export default function Details() {
           <div className="details-content">
             <UbicacionVectores vectores={vectores}/>
           </div>
-          <Button
-            label="View search results"
-          />
+
         </div>
       </>
     );

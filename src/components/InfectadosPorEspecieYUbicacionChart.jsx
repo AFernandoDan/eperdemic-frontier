@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Chart from 'react-google-charts';
 
 function convertirFecha(fecha, fechaInicial) {
-    const segundosPorAnio = 40;
+    const segundosPorAnio = 2;
     const fechaEnSegundos = (new Date(fecha) - new Date(fechaInicial)) / 1000;
     const aniosDif = Math.floor(fechaEnSegundos / segundosPorAnio);
-    return 2023 + aniosDif;
+    return 2100 + aniosDif;
   }
   
 function parseData(input) {

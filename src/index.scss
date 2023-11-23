@@ -210,7 +210,25 @@ body {
   overflow-y: auto;
   min-height: max-content;
   max-height: 100vh;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.graficos::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: 
+  url("https://cdn.discordapp.com/attachments/1142469204973473793/1176292087671570503/Emblem-ACVI-Overseer.png?ex=656e5660&is=655be160&hm=f8e6efa0dba54cc5fc458f7bee68e93a539bee9ebeffbec20e70ac81c8a7d789&"),
+  url("https://i.pinimg.com/originals/64/82/66/64826672756773366d06dd11f5605291.gif");
+  background-repeat: repeat-x, repeat;
+  background-position: 50% 10%, center;
+  background-size: 10vw, 30vw;
+  z-index: -1;
+  filter: blur(10px);
 }
 
 // graficos container
@@ -220,13 +238,36 @@ body {
 
 // tengo un svg dentro de graficos-container cambiale el fondo a negro
 .graficos-container svg rect {
-  fill: black
+  fill: transparent;
+}
+
+.graficos-container > div {
+  width: 100% !important;
 }
 
 .graficos-container .google-visualization-tooltip path {
   fill: black;
 }
 
-.graficos-container h1 {
+.graficos h1 {
   margin-left: 1rem;
+}
+
+.especies {
+  margin-top: 1rem;
+  height: auto;
+}
+
+.especies h2 {
+  color: crimson !important;
+}
+
+.especies-container > li {
+  margin-top: -2.5rem;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.especies-container {
+  list-style-type: disc;
 }

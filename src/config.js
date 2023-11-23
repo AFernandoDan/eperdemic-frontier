@@ -11,6 +11,8 @@ export default {
     'https://raw.githubusercontent.com/chrisrzhou/react-globe/main/textures/clouds.png',
   globeTexture:
     'https://raw.githubusercontent.com/chrisrzhou/react-globe/main/textures/globe_dark.jpg',
+  graphicsTexture:
+  '/public/Emblem-ACVI-Overseer.png',
   options: {
     ambientLightColor: '#b34444',
     ambientLightIntensity: 1,

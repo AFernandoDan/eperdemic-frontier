@@ -5,11 +5,13 @@ import InfectadosPorEspecieYUbicacionChart from '../components/InfectadosPorEspe
 
 const Graficos = () => {
 
-  return (<div className='graficos-container'>
+  return (<div className='graficos'>
     <h1>Graficos</h1>
+    <div className='graficos-container'>
       <InfectadosPorEspecieYUbicacionChart />
       <InfectadosPorUbicacionChart/>
       <InfectadosPorEspecieChart />
+    </div>
   </div>)
 }
 

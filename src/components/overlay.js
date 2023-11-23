@@ -6,6 +6,7 @@ import About from './about';
 import Description from './description';
 import Fade from './fade';
 import Link from './link';
+import EspeciesMasPeligrosas from './EspeciesMasPeligrosas';
 
 export default function Overlay() {
   const [
@@ -44,6 +45,7 @@ export default function Overlay() {
               </h2>
             </Link>
           ))}
+            <EspeciesMasPeligrosas  />
         </div>
         <div className="footer">
           Updated on {moment(lastUpdated).format('MMM D, YYYY')}
